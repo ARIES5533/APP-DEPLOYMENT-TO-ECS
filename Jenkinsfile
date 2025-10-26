@@ -139,7 +139,7 @@ pipeline {
         sh '''
           set -e
           terraform apply -auto-approve tfplan
-          echo "✅ Terraform apply completed successfully."
+          echo "✅ Terraform apply completed successfully"
         '''
       }
     }
