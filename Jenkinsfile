@@ -128,7 +128,7 @@ pipeline {
         sh '''
           set -e
           terraform plan -out=tfplan
-          echo "✅ Terraform plan completed"
+          echo "✅ Terraform plan completed."
         '''
       }
     }
