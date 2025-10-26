@@ -43,7 +43,7 @@
 //           sh '''
 //             set -e
 //             terraform validate
-//             echo "✅ Terraform validation successful."
+//             echo "✅ Terraform validation successful"
 //           '''
 //         }
 //       }
@@ -79,6 +79,9 @@
 
 pipeline {
   agent any
+
+
+
 
   environment {
     AWS_CREDENTIALS_ID = 'aws-cred'
