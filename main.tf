@@ -90,7 +90,7 @@ resource "aws_ecs_service" "pet_store_service" {
   name                               = "pet-store-ui-service"
   cluster                            = aws_ecs_cluster.pet_store.id
   task_definition                    = aws_ecs_task_definition.pet_store_ui.arn
-  desired_count                      = 3
+  desired_count                      = 1
   launch_type                        = "FARGATE"
   platform_version                   = "LATEST"
   enable_ecs_managed_tags            = true
